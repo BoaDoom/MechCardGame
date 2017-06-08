@@ -177,11 +177,13 @@ public class CardScript : MonoBehaviour {
 		controllerParentIDtag = incomingPlayerControllerIDTag;
 	}
 	public IEnumerator checkIfBPartIsActive(){
+//		print("cards being checked "+ cardSpriteNum);
 		if (BPartReference.destroyedCheck ()) {
+//			print ("card is destroyed");
 			//"do something to signal its destroyed"
-			print(disabledCardSprite.enabled+ " this card is dead, don't use it plz");
+//			print(disabledCardSprite.enabled+ " this card is dead, don't use it plz");
 			disabledCardSprite.enabled = true;
-			print(disabledCardSprite.enabled+ " after test");
+//			print(disabledCardSprite.enabled+ " after test");
 
 		}
 		yield return null;

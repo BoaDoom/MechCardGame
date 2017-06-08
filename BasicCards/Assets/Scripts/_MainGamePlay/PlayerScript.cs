@@ -163,6 +163,7 @@ public class PlayerScript : MonoBehaviour {
 		healthBarGraphic.localScale = tempHealth;
 		healthBarGraphic.localPosition = tempPositionForHealth;
 		enemyHealthDisplayNumber.text = remainingHealth.ToString() + "/" + healthMax.ToString();
+		activeDeck.updateCards ();		//in place to refresh any cards that have been disabled because of their body parts being destroyed
 	}
 	public void populateBody(){				//currently by the manualstart of this same script, which is started by the game controller
 		healthMax = 0;
@@ -210,7 +211,7 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 		updateHealthDisplay ();
-		activeDeck.updateCards ();		//in place to refresh any cards that have been disabled because of their body parts being destroyed
+
 	}
 	public PlayAreaScript getPlayAreaOfPlayer(){
 		return playAreaScript;
