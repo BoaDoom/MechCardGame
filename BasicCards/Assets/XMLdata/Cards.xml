@@ -1,0 +1,134 @@
+<attackcards>
+	<pinpointshotcard>
+		<attackpattern>single1x1</attackpattern>
+		<card number="0">
+			<name>PPSweak</name>
+			<rank>1</rank>
+			<attack>10</attack>
+			<attackType>PinpointShot</attackType>
+		</card>
+		<card number="1">
+			<name>PPSMweak</name>
+			<rank>2</rank>
+			<attack>15</attack>
+			<attackType>PinpointShot</attackType>
+		</card>
+		<card number="2">
+			<name>PPSmedium</name>
+			<rank>3</rank>
+			<attack>20</attack>
+			<attackType>PinpointShot</attackType>
+		</card>
+		<card number="3">
+			<name>PPSMstrong</name>
+			<rank>4</rank>
+			<attack>25</attack>
+			<attackType>PinpointShot</attackType>
+		</card>
+		<card number="4">
+			<name>PPSstrong</name>
+			<rank>5</rank>
+			<attack>30</attack>
+			<attackType>PinpointShot</attackType>
+		</card>
+	</pinpointshotcard>
+	<spreadshotcard>
+		<attackpattern>5star</attackpattern>
+		<card number="5">
+			<name>SSweak</name>
+			<rank>6</rank>
+			<attack>6</attack>
+			<attackType>SpreadShot</attackType>
+		</card>
+		<card number="6">
+			<name>SSMweak</name>
+			<rank>7</rank>
+			<attack>8</attack>
+			<attackType>SpreadShot</attackType>
+		</card>
+		<card number="7">
+			<name>SSmedium</name>
+			<rank>8</rank>
+			<attack>10</attack>
+			<attackType>SpreadShot</attackType>
+		</card>
+		<card number="8">
+			<name>SSMstrong</name>
+			<rank>9</rank>
+			<attack>12</attack>
+			<attackType>SpreadShot</attackType>
+		</card>
+		<card number="9">
+			<name>SSstrong</name>
+			<rank>9</rank>
+			<attack>14</attack>
+			<attackType>SpreadShot</attackType>
+		</card>
+		</spreadshotcard>
+	<areashotcard>
+		<attackpattern>12star</attackpattern>
+		<card number="10">
+			<name>ASweak</name>
+			<rank>1</rank>
+			<attack>2</attack>
+			<attackType>AreaShot</attackType>
+		</card>
+		<card number="11">
+			<name>ASMweak</name>
+			<rank>2</rank>
+			<attack>4</attack>
+			<attackType>AreaShot</attackType>
+		</card>
+		<card number="12">
+			<name>ASmedium</name>
+			<rank>3</rank>
+			<attack>6</attack>
+			<attackType>AreaShot</attackType>
+		</card>
+		<card number="13">
+			<name>ASMstrong</name>
+			<rank>4</rank>
+			<attack>8</attack>
+			<attackType>AreaShot</attackType>
+		</card>
+		<card number="14">
+			<name>ASstrong</name>
+			<rank>5</rank>
+			<attack>10</attack>
+			<attackType>AreaShot</attackType>
+		</card>
+	</areashotcard>
+	<randomshotcard>
+		<attackpattern>2x2rand</attackpattern>
+		<card number="15">
+			<name>RSweak</name>
+			<rank>1</rank>
+			<attack>10</attack>
+			<attackType>RandomShot</attackType>
+		</card>
+		<card number="16">
+			<name>RSMweak</name>
+			<rank>2</rank>
+			<attack>15</attack>
+			<attackType>RandomShot</attackType>
+		</card>
+		<card number="17">
+			<name>RSmedium</name>
+			<rank>3</rank>
+			<attack>20</attack>
+			<attackType>RandomShot</attackType>
+		</card>
+		<card number="18">
+			<name>RSMstrong</name>
+			<rank>4</rank>
+			<attack>25</attack>
+			<attackType>RandomShot</attackType>
+		</card>
+		<card number="19">
+			<name>RSstrong</name>
+			<rank>5</rank>
+			<attack>30</attack>
+			<attackType>RandomShot</attackType>
+		</card>
+	</randomshotcard>
+</attackcards>

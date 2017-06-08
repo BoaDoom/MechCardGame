@@ -1,0 +1,7 @@
+
+
+http://wiki.unity3d.com/index.php?title=Saving_and_Loading_Data:_XmlSerializer
+
+https://msdn.microsoft.com/en-us/library/fa420a9y(v=vs.110).aspx
+http://www.ibm.com/developerworks/library/x-contain/
+https://www.studica.com/blog/read-xml-file-in-unity

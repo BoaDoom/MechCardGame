@@ -1,0 +1,32 @@
+<hitboxlist>
+	<hitbox name = "PinpointShot">
+		<placement>default</placement>
+		<designShape>
+			<line>1</line>
+		</designShape>
+	</hitbox>
+	<hitbox name = "SpreadShot">
+		<placement>default</placement>
+		<designShape>
+			<line>010</line>
+			<line>111</line>
+			<line>010</line>
+		</designShape>
+	</hitbox>
+	<hitbox name = "AreaShot">
+		<placement>default</placement>
+		<designShape>
+			<line>0110</line>
+			<line>1111</line>
+			<line>1111</line>
+			<line>0110</line>
+		</designShape>
+	</hitbox>
+	<hitbox name = "RandomShot">
+		<placement>random</placement>
+		<designShape>
+			<line>11</line>
+			<line>11</line>
+		</designShape>
+	</hitbox>
+</hitboxlist>

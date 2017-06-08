@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Cards", "Assembly-CSharp.csproj", "{CFD3C49C-0D5F-731B-156A-4B91929C75BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFD3C49C-0D5F-731B-156A-4B91929C75BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD3C49C-0D5F-731B-156A-4B91929C75BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD3C49C-0D5F-731B-156A-4B91929C75BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD3C49C-0D5F-731B-156A-4B91929C75BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

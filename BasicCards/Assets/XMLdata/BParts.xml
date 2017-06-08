@@ -1,0 +1,498 @@
+<BPartsList>
+	<Arm>
+		<Bpart name = "arm uno">
+			<BPartIDnum>1</BPartIDnum>
+			<WeaponModuleSlots>1</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00111</line>
+				<line>01110</line>
+				<line>01100</line>
+				<line>11100</line>
+				<line>11100</line>
+				<line>11100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>3</xCord>
+				<yCord>5</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "arm two">
+			<BPartIDnum>2</BPartIDnum>
+			<WeaponModuleSlots>1</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00111</line>
+				<line>00110</line>
+				<line>00100</line>
+				<line>00100</line>
+				<line>11100</line>
+				<line>11100</line>
+				<line>11100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>4</xCord>
+				<yCord>6</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "arm three">
+			<BPartIDnum>3</BPartIDnum>
+			<WeaponModuleSlots>1</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>011</line>
+				<line>011</line>
+				<line>110</line>
+				<line>110</line>
+				<line>110</line>
+				<line>110</line>
+				<line>110</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>2</xCord>
+				<yCord>6</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "arm four">
+			<BPartIDnum>4</BPartIDnum>
+			<WeaponModuleSlots>2</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>11111</line>
+				<line>11011</line>
+				<line>11011</line>
+				<line>00010</line>
+				<line>01110</line>
+				<line>01100</line>
+				<line>01100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>4</xCord>
+				<yCord>6</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Arm>
+	<Head>
+		<Bpart name = "head one">
+			<BPartIDnum>5</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>111</line>
+				<line>111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "head two">
+			<BPartIDnum>6</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>111</line>
+				<line>111</line>
+				<line>111</line>
+				<line>010</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "head three">
+			<BPartIDnum>7</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>01110</line>
+				<line>11111</line>
+				<line>11111</line>
+				<line>00100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>2</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "head four">
+			<BPartIDnum>8</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>010</line>
+				<line>010</line>
+				<line>111</line>
+				<line>111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Head>
+	<Leg>
+		<Bpart name = "leg one">
+			<BPartIDnum>9</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>0010</line>
+				<line>0111</line>
+				<line>0111</line>
+				<line>0110</line>
+				<line>0110</line>
+				<line>0110</line>
+				<line>1111</line>
+				<line>1111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>2</xCord>
+				<yCord>7</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "leg two">
+			<BPartIDnum>10</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00010</line>
+				<line>00111</line>
+				<line>01110</line>
+				<line>01100</line>
+				<line>01100</line>
+				<line>00110</line>
+				<line>00110</line>
+				<line>01111</line>
+				<line>11111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>3</xCord>
+				<yCord>8</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "leg three">
+			<BPartIDnum>11</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>010</line>
+				<line>111</line>
+				<line>110</line>
+				<line>010</line>
+				<line>010</line>
+				<line>010</line>
+				<line>110</line>
+				<line>110</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>7</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "leg four">
+			<BPartIDnum>12</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00010</line>
+				<line>00110</line>
+				<line>00110</line>
+				<line>00100</line>
+				<line>00100</line>
+				<line>00100</line>
+				<line>00100</line>
+				<line>01110</line>
+				<line>11111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>3</xCord>
+				<yCord>8</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Leg>
+	<Shoulder>
+		<Bpart name = "shoulder one">
+			<BPartIDnum>13</BPartIDnum>
+			<WeaponModuleSlots>1</WeaponModuleSlots>
+			<UtilityModuleSlots>0</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>1110</line>
+				<line>1110</line>
+				<line>0111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>3</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "shoulder two">
+			<BPartIDnum>14</BPartIDnum>
+			<WeaponModuleSlots>2</WeaponModuleSlots>
+			<UtilityModuleSlots>0</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>11100</line>
+				<line>11110</line>
+				<line>11110</line>
+				<line>00111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>2</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>4</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "shoulder three">
+			<BPartIDnum>15</BPartIDnum>
+			<WeaponModuleSlots>1</WeaponModuleSlots>
+			<UtilityModuleSlots>0</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00100</line>
+				<line>01100</line>
+				<line>11111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>4</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "shoulder four">
+			<BPartIDnum>16</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>0</UtilityModuleSlots>
+			<GenericModuleSlots>1</GenericModuleSlots>
+			<gridHitBox>
+				<line>111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>2</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+	</Shoulder>
+	<Torso>
+		<Bpart name = "torso one">
+			<BPartIDnum>17</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>0011100</line>
+				<line>0111110</line>
+				<line>1111111</line>
+				<line>1111111</line>
+				<line>0111110</line>
+				<line>0111110</line>
+				<line>0011100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>6</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>5</xCord>
+					<yCord>6</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>3</xCord>
+					<yCord>7</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>0</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>5</xCord>
+					<yCord>0</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "torso two">
+			<BPartIDnum>18</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>01110</line>
+				<line>11111</line>
+				<line>11111</line>
+				<line>01110</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>3</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>4</xCord>
+					<yCord>3</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>2</xCord>
+					<yCord>4</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>0</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>4</xCord>
+					<yCord>0</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "torso three">
+			<BPartIDnum>19</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>1</GenericModuleSlots>
+			<gridHitBox>
+				<line>000111000</line>
+				<line>001111100</line>
+				<line>011111110</line>
+				<line>111111111</line>
+				<line>111111111</line>
+				<line>001111100</line>
+				<line>000111000</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>4</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>8</xCord>
+					<yCord>4</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>4</xCord>
+					<yCord>7</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>1</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>7</xCord>
+					<yCord>1</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "torso four">
+			<BPartIDnum>20</BPartIDnum>
+			<WeaponModuleSlots>0</WeaponModuleSlots>
+			<UtilityModuleSlots>1</UtilityModuleSlots>
+			<GenericModuleSlots>0</GenericModuleSlots>
+			<gridHitBox>
+				<line>00100</line>
+				<line>11111</line>
+				<line>11111</line>
+				<line>01110</line>
+				<line>01110</line>
+				<line>11111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>5</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>4</xCord>
+					<yCord>5</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>2</xCord>
+					<yCord>6</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>-1</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>4</xCord>
+					<yCord>-1</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+	</Torso>
+</BPartsList>

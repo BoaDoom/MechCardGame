@@ -1,0 +1,25 @@
+moves
+03-26-17
+-XML scripts into sub folder of xmlscripts. Organization
+-script DraggableGrid, moved to z_old for scripts. Purpose was to drag similar to draggable script, but would jump from place to place and only move along a grid. Was part of the solution for the targeting grid, changed because grids lining up was impratical
+-Prefab called WeaponSquare, moved into /old prefab folder. Unsure of purpose, think it was something to do with the alternate version of the TargetSquare prefab
+
+rename
+03-26-17
+going to try and change terminology of "behavour" to 'scripts'
+
+-ActiveSquare prefab to TargetSquare
+-Card prefab to CardPrefab
+-TargetSquare prefab to TargetSquarePrefab
+-undrawnDeck prefab to UndrawnDeckPrefab
+
+-TargetSquareBehaviour script to TargetSquareScript
+-CardBehaviour script to CardScript
+-DeckBehaviour script to DeckScript
+-Draggable script to DraggableScript
+-EnemyBehaviour script to Enemy Script
+-playArea script to PlayAreaScript
+-UndrawnDeck script to UndrawnDeckScript
+
+-targetsquareprefab tag from ActiveSquare to TargetSquare
+-DeckBehaviour tag to DeckController

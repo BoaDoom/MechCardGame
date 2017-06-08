@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TargetSquareScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GameControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayAreaScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TargetSquareScript.cs" Line="131" Column="27" />
+      <File FileName="Assets\Scripts\BPartScripts\BodyPartMakerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BPartScripts\BPartGenericScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DeckScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CardScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UndrawnDeckScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\XMLScripts\LoaderScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DraggableScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="F:\Unity\CardGame\Basic Cards\Assets\Scripts\BPartScripts\BodyPartMakerScript.cs" line="144" column="1" />
+      <Breakpoint file="H:\Unity\CardGame\Basic Cards\Assets\Scripts\BPartScripts\BodyPartMakerScript.cs" line="39" column="1" />
+      <Breakpoint file="H:\Unity\CardGame\Basic Cards\Assets\Scripts\GameControllerScript.cs" line="132" column="6" />
+      <Breakpoint file="H:\Unity\CardGame\Basic Cards\Assets\Scripts\GameControllerScript.cs" line="133" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

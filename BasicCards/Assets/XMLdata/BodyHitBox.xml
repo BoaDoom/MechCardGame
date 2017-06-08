@@ -1,0 +1,32 @@
+<bodyHitBoxList>
+	<body name = "plainTestBody">
+		<placement>default</placement>
+		<Xdimensions>7</Xdimensions>
+		<Ydimensions>8</Ydimensions>
+		<designShape>
+			<line>0001000</line>
+			<line>0111110</line>
+			<line>1011101</line>
+			<line>1001001</line>
+			<line>1011101</line>
+			<line>0010100</line>
+			<line>0010100</line>
+			<line>0010100</line>
+		</designShape>
+	</body>
+	<body name = "dumbStuff">
+		<placement>default</placement>
+		<Xdimensions>7</Xdimensions>
+		<Ydimensions>8</Ydimensions>
+		<designShape>
+			<line>0001000</line>
+			<line>0111110</line>
+			<line>1011101</line>
+			<line>1001001</line>
+			<line>1011101</line>
+			<line>0010100</line>
+			<line>0010100</line>
+			<line>0010100</line>
+		</designShape>
+	</body>
+</bodyHitBoxList>

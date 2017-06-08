@@ -1,0 +1,230 @@
+<BPartsList>
+	<Arm>
+		<Bpart name = "large biped arm">
+			<gridHitBox>
+				<line>00111</line>
+				<line>01110</line>
+				<line>01100</line>
+				<line>11100</line>
+				<line>11100</line>
+				<line>11100</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>3</xCord>
+				<yCord>5</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "light arm">
+			<gridHitBox>
+				<line>11</line>
+				<line>10</line>
+				<line>10</line>
+				<line>10</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>3</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "heavy arm">
+			<gridHitBox>
+				<line>110</line>
+				<line>110</line>
+				<line>110</line>
+				<line>110</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>2</xCord>
+				<yCord>3</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Arm>
+	<Head>
+		<Bpart name = "large biped head">
+			<gridHitBox>
+				<line>111</line>
+				<line>111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "light head">
+			<gridHitBox>
+				<line>1</line>
+				<line>1</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>0</xCord>
+				<yCord>0</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Head>
+	<Leg>
+		<Bpart name = "large biped leg">
+			<gridHitBox>
+				<line>0010</line>
+				<line>0111</line>
+				<line>0111</line>
+				<line>0110</line>
+				<line>0110</line>
+				<line>0110</line>
+				<line>1111</line>
+				<line>1111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>2</xCord>
+				<yCord>7</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "light leg">
+			<gridHitBox>
+				<line>1</line>
+				<line>1</line>
+				<line>1</line>
+				<line>1</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>0</xCord>
+				<yCord>3</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "heavy leg">
+			<gridHitBox>
+				<line>01</line>
+				<line>11</line>
+				<line>11</line>
+				<line>11</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>false</ComplexAnchorPoints>
+			<AnchorPoint>
+				<xCord>1</xCord>
+				<yCord>3</yCord>
+			</AnchorPoint>
+			<Health>30</Health>
+		</Bpart>
+	</Leg>
+	<Shoulder>
+		<Bpart name = "large biped shoulder">
+			<gridHitBox>
+				<line>1110</line>
+				<line>1110</line>
+				<line>0111</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>3</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "light shoulder">
+			<gridHitBox>
+				<line>11</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<ArmPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>-1</yCord>
+				</ArmPoint>
+				<TorsoPoint typeOfSocket = "female">
+					<xCord>1</xCord>
+					<yCord>0</yCord>
+				</TorsoPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+	</Shoulder>
+	<Torso>
+		<Bpart name = "large biped torso">
+			<gridHitBox>
+				<line>0011100</line>
+				<line>0111110</line>
+				<line>1111111</line>
+				<line>1111111</line>
+				<line>0111110</line>
+				<line>0111110</line>
+				<line>0011100</line>
+				<line>0001000</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>7</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>5</xCord>
+					<yCord>7</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>3</xCord>
+					<yCord>8</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>1</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>5</xCord>
+					<yCord>1</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+		<Bpart name = "light torso">
+			<gridHitBox>
+				<line>111</line>
+				<line>111</line>
+				<line>111</line>
+				<line>010</line>
+			</gridHitBox>
+			<ComplexAnchorPoints>true</ComplexAnchorPoints>
+			<AnchorPoints>
+				<LeftShoulderPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>4</yCord>
+				</LeftShoulderPoint>
+				<RightShoulderPoint typeOfSocket = "male">
+					<xCord>2</xCord>
+					<yCord>4</yCord>
+				</RightShoulderPoint>
+				<HeadPoint typeOfSocket = "male">
+					<xCord>1</xCord>
+					<yCord>4</yCord>
+				</HeadPoint>
+				<LeftLegPoint typeOfSocket = "male">
+					<xCord>0</xCord>
+					<yCord>0</yCord>
+				</LeftLegPoint>
+				<RightLegPoint typeOfSocket = "male">
+					<xCord>2</xCord>
+					<yCord>0</yCord>
+				</RightLegPoint>
+			</AnchorPoints>
+			<Health>30</Health>
+		</Bpart>
+	</Torso>
+</BPartsList>

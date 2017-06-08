@@ -1,0 +1,56 @@
+<Modules>
+  <Weapons>
+    <Module IDnum = "0">
+      <cardNumber>
+      0
+      </cardNumber>
+    </Module>
+    <Module IDnum = "1">
+      <cardNumber>
+      1
+      </cardNumber>
+    </Module>
+    <Module IDnum = "2">
+      <cardNumber>
+      2
+      </cardNumber>
+    </Module>
+    <Module IDnum = "3">
+      <cardNumber>
+      3
+      </cardNumber>
+    </Module>
+    <Module IDnum = "4">
+      <cardNumber>
+      4
+      </cardNumber>
+    </Module>
+  </Weapons>
+  <Utility>
+    <Module IDnum = "5">
+      <cardNumber>
+      5
+      </cardNumber>
+    </Module>
+    <Module IDnum = "6">
+      <cardNumber>
+      6
+      </cardNumber>
+    </Module>
+    <Module IDnum = "7">
+      <cardNumber>
+      7
+      </cardNumber>
+    </Module>
+    <Module IDnum = "8">
+      <cardNumber>
+      8
+      </cardNumber>
+    </Module>
+    <Module IDnum = "9">
+      <cardNumber>
+      9
+      </cardNumber>
+    </Module>
+  </Utility>
+</Modules>
