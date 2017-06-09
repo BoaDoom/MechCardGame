@@ -12,13 +12,15 @@ public class CardScript : MonoBehaviour {
 
 	private DeckScript deckScript;
 
-	private bool active;
-	private bool clickedOn;
+//	private bool active;
+//	private bool clickedOn;
 	private bool discardLocation;
+	private bool playLockLocation;
 	private Sprite storedSprite;
 	private SpriteRenderer spriteRenderer;
 	public SpriteRenderer disabledCardSprite;
-	private int hitSquareOverflow;
+
+//	private int hitSquareOverflow;
 
 	private string controllerParentIDtag; //will either be EnemyController or PlayerController
 	private PlayerScript selfPlayerController;
@@ -38,11 +40,12 @@ public class CardScript : MonoBehaviour {
 //		disabledCardSprite = gameObject.GetComponentInChildren<SpriteRenderer> ();
 //		print (disabledCardSprite);
 		disabledCardSprite.enabled = false;
-		active = true;
+//		active = true;
 		discardLocation = false;
+		playLockLocation = false;
 		//cardInPlayArea = false;
-		clickedOn = false;
-		hitSquareOverflow = 0;
+//		clickedOn = false;
+//		hitSquareOverflow = 0;
 
 	}
 	public void setFace(Sprite cardFaceGraphic){
@@ -89,62 +92,71 @@ public class CardScript : MonoBehaviour {
 	}
 
 	private void OnMouseDown(){
-		if (!clickedOn) {	//allows a single click down and up to activate and attach card to mouse pointer
-			opponentPlayerController.sendingAttackCard (hitBoxDataForCard, attackDamageOfCard);		//sends the info about attack attached to the card to the gamecontroller
-			clickedOn = true;
-			//Debug.Log (gameObject.GetComponent<CardScript> ().AttackValue);
-			deckScript.setCurrentCard (gameObject.GetComponent<CardScript>());	//sets the clicked on card in the deck object to let it know which card to delete/shuffle
-		} else {
-			clickedOn = false;
+//		if (!clickedOn) {	//allows a single click down and up to activate and attach card to mouse pointer
+		opponentPlayerController.sendingAttackCard (hitBoxDataForCard, attackDamageOfCard);		//sends the info about attack attached to the card to the gamecontroller
+//		clickedOn = true;
+		//Debug.Log (gameObject.GetComponent<CardScript> ().AttackValue);
+		deckScript.setCurrentCard (gameObject.GetComponent<CardScript>());	//sets the clicked on card in the deck object to let it know which card to delete/shuffle
+//		} else {
+//			clickedOn = false;
 //			deckScript.emptyCurrentCard ();
-		}
+//		}
 	}
 	private void OnMouseUp(){
-		if (!clickedOn) {	//if the card isn't currently clicked on it signals that it is no longer about to be played
-			opponentPlayerController.cardClickedOff ();
+//		if (!clickedOn) {	//if the card isn't currently clicked on it signals that it is no longer about to be played
+//		opponentPlayerController.cardClickedOff ();
 
-		}
+//		}
 		if (discardLocation) {
 			deckScript.turnOffCurrentCard ();
+		}
+		if (playLockLocation) {
+			deckScript.lockInCurrentCard ();
 		}
 
 	}
 	void OnTriggerEnter2D(Collider2D other){
 		//print ("");
-		if (other.CompareTag("TargetSquare")){		//does not trigger anything if its colliding with anything else
-//			print ("other tag : "+other.GetComponent<TargetSquareScript>().getPlayerID());
-//			print ("Self tag : "+ getPlayerID());
-			if (active && (hitSquareOverflow<=0) && (other.GetComponent<TargetSquareScript>().getPlayerID() != getPlayerID())){	//checks to compare if the card is being played in the enemy play area or its own
-				hideCard ();		//if its being played in the enemy area, it 'hides' so the shooting pattern can be shown
-//				print ("card hidden");
-//				cardInPlayArea = true;
-			}
-			hitSquareOverflow++;			//the sum of all the small squares the card has entered. If number is 0, its left play area and can becom active again
-		}
+//		if (other.CompareTag("TargetSquare")){		//does not trigger anything if its colliding with anything else
+////			print ("other tag : "+other.GetComponent<TargetSquareScript>().getPlayerID());
+////			print ("Self tag : "+ getPlayerID());
+//			if (active && (hitSquareOverflow<=0) && (other.GetComponent<TargetSquareScript>().getPlayerID() != getPlayerID())){	//checks to compare if the card is being played in the enemy play area or its own
+//				hideCard ();		//if its being played in the enemy area, it 'hides' so the shooting pattern can be shown
+////				print ("card hidden");
+////				cardInPlayArea = true;
+//			}
+//			hitSquareOverflow++;			//the sum of all the small squares the card has entered. If number is 0, its left play area and can becom active again
+//		}
 		if (other.CompareTag ("DiscardLocation")) {
 			discardLocation = true;
 		}
+		if (other.CompareTag ("CardLockLocation")) {
+			playLockLocation = true;
+		}
 	}
 	void OnTriggerExit2D(Collider2D other){		//a running count of all the squares the card has passed over, so it knows when to show back up if it is taken off the play area
-		if (other.CompareTag("TargetSquare")){
-			hitSquareOverflow--;
-			if (!active && (hitSquareOverflow<=0)){
-				showCard ();
-//				cardInPlayArea = false;
-			}
-		}
+//		if (other.CompareTag("TargetSquare")){
+//			hitSquareOverflow--;
+//			if (!active && (hitSquareOverflow<=0)){
+//				showCard ();
+////				cardInPlayArea = false;
+//			}
+//		}
 		if (other.CompareTag ("DiscardLocation")) {
 			discardLocation = false;
+		}
+		if (other.CompareTag ("CardLockLocation")) {
+			playLockLocation = false;
 		}
 	}
 
 	public void hideCard(){
-		active = false;
+//		active = false;
 		storedSprite = spriteRenderer.sprite;
 		spriteRenderer.sprite = null;
 	}
 	public void showCard(){
-		active = true;
+//		active = true;
 		spriteRenderer.sprite = storedSprite;
 		//storedSprite = null;
 	}
@@ -175,6 +187,9 @@ public class CardScript : MonoBehaviour {
 		}
 
 		controllerParentIDtag = incomingPlayerControllerIDTag;
+	}
+	public bool getIfCardIsLocked(){
+		return playLockLocation;
 	}
 	public IEnumerator checkIfBPartIsActive(){
 //		print("cards being checked "+ cardSpriteNum);

@@ -7,7 +7,7 @@ using UnityEngine;
 
 
 public class DeckScript : MonoBehaviour {
-	private int maxCardsOnBoard = 3;
+	private int maxCardsOnBoard = 4;
 	
 	public Sprite[] cardsFaces;		//all of the sprites to use for dealing cards
 	public Sprite cardBack;			//the image for the back of the cards
@@ -32,6 +32,8 @@ public class DeckScript : MonoBehaviour {
 	public Transform cardStartPosition;			//the location marker for the first card drawn
 	public Transform deckStartPosition;			//undrawnDeck start position
 	public Transform offScreenDeck;				//the actual location for storage of all the cards in the deck **//need to fix to be more efficient. Maybe not instantiate the cards untill drawn?
+	public Transform cardLockLocation;
+	private GameObject[] dealtCardLocations;
 
 	//public weaponHitContainerBehaviour weaponHitSquaresPrefab;
 
@@ -48,6 +50,11 @@ public class DeckScript : MonoBehaviour {
 	private UndrawnDeckScript undrawnDeckInst;
 
 	void Start () {
+		dealtCardLocations = new GameObject[maxCardsOnBoard];
+		for (int i = 0; i < maxCardsOnBoard; i++) {
+			dealtCardLocations[i] = new GameObject();
+			dealtCardLocations [i].transform.SetParent (gameObject.GetComponent<Transform> ());
+		}
 		//print (cardStartPosition.transform.position);
 		listOfDrawLWinfo = new List<LWCardInfo>();
 		discardedCards = new List<LWCardInfo>();
@@ -84,7 +91,18 @@ public class DeckScript : MonoBehaviour {
 		if(XMLWeaponHitLoaderScriptTEMP == null && loaderScriptTemp != null){
 			Debug.Log ("Cannot find 'weaponHitBoxLoader'object");}
 
-		cardWidthX = card.transform.localScale.x;															//scale of card used for spacing
+		cardWidthX = card.transform.localScale.x;
+		int localXTemp = 0;
+		foreach (GameObject cardLocals in dealtCardLocations) {
+//			cardLocals.
+			float cardXPosition = cardStartPosition.transform.position.x + (cardWidthX + cardGapX) * localXTemp;
+//			print (cardLocals.localPosition);
+			cardLocals.transform.localPosition = new Vector3 (cardXPosition, cardStartPosition.transform.position.y, cardStartPosition.transform.position.z);			//creates a vector3 to send to the card
+			//drawnCards [localXTemp].moveCard (tableLocation);	
+			localXTemp++;
+		}
+
+
 		undrawnDeckInst = Instantiate (undrawnDeck, deckStartPosition.position, deckStartPosition.rotation);					//making the object that symbolized the undrawn deck of cards
 		undrawnDeckInst.transform.SetParent(gameObject.transform);
 		undrawnDeckInst.GetComponent<UndrawnDeckScript>().ManualStart();
@@ -176,9 +194,11 @@ public class DeckScript : MonoBehaviour {
 //		print (cardStartPosition.transform.position);
 		int tempCount = drawnCards.Count;
 		for (int i = 0; i < tempCount; i++) {
-			float cardXPosition = cardStartPosition.transform.position.x + (cardWidthX + cardGapX) * i;
-			tableLocation = new Vector3(cardXPosition, cardStartPosition.transform.position.y, cardStartPosition.transform.position.z);			//creates a vector3 to send to the card
-			drawnCards[i].moveCard(tableLocation);																						//sends coordinates to the card on where to start on the game board
+			if (!drawnCards[i].getIfCardIsLocked()){
+//				float cardXPosition = cardStartPosition.transform.position.x + (cardWidthX + cardGapX) * i;
+//				tableLocation = new Vector3(cardXPosition, cardStartPosition.transform.position.y, cardStartPosition.transform.position.z);			//creates a vector3 to send to the card
+				drawnCards[i].moveCard(dealtCardLocations[i].transform.localPosition);																						//sends coordinates to the card on where to start on the game board
+			}
 		}
 	}
 
@@ -240,11 +260,20 @@ public class DeckScript : MonoBehaviour {
 		//Debug.Log ("trying to turn off");
 		if (currentCard == null) {
 			Debug.Log ("There is currently no activated card");
-		} else
+		} else {
 			currentCard.deactivate ();
 			//Debug.Log ("attack value of current card: "+currentCard.AttackValue);
 			updateCards ();
 		}
+	}
+	public void lockInCurrentCard(){
+		if (currentCard == null) {
+			Debug.Log ("There is currently no activated card");
+		} else {
+			currentCard.GetComponent<Transform> ().localPosition = cardLockLocation.localPosition;
+			playerScript.turnOnTargetIndicator ();
+		}
+	}
 	public string getControllerParentIdTag(){
 		return controllerParentIDtag;
 	}

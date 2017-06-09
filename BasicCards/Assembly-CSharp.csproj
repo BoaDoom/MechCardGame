@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\BPartScripts\BPartGenericScript.cs" />
      <Compile Include="Assets\Scripts\BPartScripts\BodyPartMakerScript.cs" />
      <Compile Include="Assets\Scripts\DraggableScript.cs" />
+     <Compile Include="Assets\Scripts\DraggableTargetScript.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\BodyPartPickerPanel.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\BodyPartSelectionCanvasScript.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\ModulePickerScript.cs" />

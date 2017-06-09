@@ -23,6 +23,8 @@ public class PlayerScript : MonoBehaviour {
 	private Vector3 playerTickerStartTransformPosition;
 //	private float defaultTickerTime = 5.0f;
 //	private float tickerTimer;
+	public SpriteRenderer targetNotifier;
+	private SpriteRenderer targetNotifierSprite;
 
 
 	private WholeBodyOfParts wholeBodyOfParts = new WholeBodyOfParts();
@@ -47,6 +49,11 @@ public class PlayerScript : MonoBehaviour {
 
 	public IEnumerator ManualStart (AllPickedBodyParts incomingBodyPartPicks) {
 //		print (incomingBodyPartPicks.pickedHead.moduleIDnum [0]);
+		if (targetNotifier != null) {
+			targetNotifierSprite = Instantiate (targetNotifier, gameObject.GetComponent<Transform> ().localPosition, gameObject.GetComponent<Transform> ().localRotation);
+			targetNotifierSprite.GetComponent<Transform> ().SetParent (gameObject.GetComponent<Transform> ());
+			targetNotifierSprite.GetComponent<SpriteRenderer> ().enabled = false;
+		}
 		playerTickerStartTransformScale = new Vector3(playerTickerTimer.transform.localScale.x, playerTickerTimer.transform.localScale.y, playerTickerTimer.transform.localScale.y);
 		playerTickerStartTransformPosition = new Vector3(playerTickerTimer.transform.localPosition.x,playerTickerTimer.transform.localPosition.y, playerTickerTimer.transform.localPosition.z);
 //		tickerTimer = defaultTickerTime;
@@ -277,8 +284,12 @@ public class PlayerScript : MonoBehaviour {
 //		//storedWeaponHitBoxForDelayedHit = incomingWeaponHitBox;
 //		listOfBPartsUnderThreatForDelayedHit = incomingListOfBPartsUnderThreat;
 //	}
-
-
+	public void turnOnTargetIndicator(){
+		targetNotifierSprite.GetComponent<SpriteRenderer> ().enabled = true;
+	}
+	public void turnOffTargetIndicator(){
+		targetNotifierSprite.GetComponent<SpriteRenderer> ().enabled = false;
+	}
 	public void cardClickedOff(){ //signal from the opponent card that it has been unclicked
 		playAreaScript.cardClickedOff();
 	}
